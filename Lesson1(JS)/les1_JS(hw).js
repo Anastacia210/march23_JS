@@ -48,4 +48,4 @@ console.log(typeof c);
 let uName = prompt("Enter Your name");
 let uMiddleName = prompt("Enter Your middle name");
 let uAge = prompt("Enter your age");
-alert ("Вітаю, " + uName + ' ' + uMiddleName + ". " + "Тобі " + uAge + " років.");
+alert ("Вітаю, " + uName + ' ' + uMiddleName + ". " + "Тобі " + uAge + " років.")
