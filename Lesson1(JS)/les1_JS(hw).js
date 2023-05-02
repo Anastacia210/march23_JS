@@ -48,5 +48,8 @@ console.log(typeof c);
 let uName = prompt("Enter Your name");
 let uMiddleName = prompt("Enter Your middle name");
 let uAge = parseInt(prompt("Enter your age"));
+// let uAge = Number(prompt("Enter your age"));
+// let uAge = +prompt("Enter your age")
+
 console.log(uName, uMiddleName, uAge);
 // alert ("Вітаю, " + uName + ' ' + uMiddleName + ". " + "Тобі " + uAge + " років.")
