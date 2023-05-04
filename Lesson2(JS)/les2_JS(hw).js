@@ -177,6 +177,11 @@ if (num1 > num2) {
 // - є змінна х, яка може прийняти будь-яке значення (стрінг, число, undefined, null  і тд включно). Напишіть код який,
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"
 //         якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
+let xx = '';
+if (xx=== ''|| xx === null || xx === undefined || xx === 0){
+    xx = 'default';
+}
+console.log(xx)
 
 // - з файлу arrays.js (лежить в папці 2023 plan ) взяти масив coursesAndDurationArray.
 // За допомоги іф перевірити кожен його елемент на тривалість навчання.
@@ -190,11 +195,24 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-for (const item of coursesAndDurationArray) {
-    let term = +prompt('Enter term')
-    if (term.monthDuration > 5) {
-        console.log('Super!')
-    }
+if (coursesAndDurationArray[0].monthDuration > 5){
+    console.log(coursesAndDurationArray[0].title, 'SUPER')
 }
+if (coursesAndDurationArray[1].monthDuration > 5){
+    console.log(coursesAndDurationArray[1].title, 'SUPER')
+}
+if (coursesAndDurationArray[2].monthDuration > 5){
+    console.log(coursesAndDurationArray[2].title, 'SUPER')
+}
+if (coursesAndDurationArray[3].monthDuration > 5){
+    console.log(coursesAndDurationArray[3].title, 'SUPER')
+}
+if (coursesAndDurationArray[4].monthDuration > 5){
+    console.log(coursesAndDurationArray[4].title, 'SUPER')
+}
+if (coursesAndDurationArray[5].monthDuration > 5){
+    console.log(coursesAndDurationArray[5].title, 'SUPER')
+}
+
 
 
