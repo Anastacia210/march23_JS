@@ -41,30 +41,30 @@ let book1_1 = {
     title: 'Шаг за грань',
     pageCount: 416,
     genre: 'мистика',
-    author: {
-        name: 'В.Поляков',
-        age: 42
-    }
+    authors: [
+        {name: 'В.Поляков', age: 42},
+        {name: 'Вл.Поляков', age: 41}
+    ]
 };
 console.log(book1_1);
 let book2_2 = {
     title: 'Кладбище домашних животных',
     pageCount: 373,
     genre: 'ужасы',
-    author: {
-        name: 'Stephen King',
-        age: 75
-    }
+    author: [
+        {name: 'Stephen King', age: 75},
+        {name: 'S. King', age: 76}
+    ]
 };
 console.log(book2_2);
 let book3_3 = {
     title: 'Туман',
     pageCount: 252,
     genre: 'ужасы',
-    author: {
-        name: 'Stephen King',
-        age: 75
-    }
+    authors: [
+        {name: 'Stephen King', age: 75},
+        {name: 'St. King', age: 75}]
+
 };
 console.log(book3_3);
 
@@ -183,16 +183,16 @@ if (num1 > num2) {
 // У випадку якщо тривалість довша за 5 місяців вивести в консоль "Супер".
 
 let coursesAndDurationArray = [
-        {title: 'JavaScript Complex', monthDuration: 5},
-        {title: 'Java Complex', monthDuration: 6},
-        {title: 'Python Complex', monthDuration: 6},
-        {title: 'QA Complex', monthDuration: 4},
-        {title: 'FullStack', monthDuration: 7},
-        {title: 'Frontend', monthDuration: 4}
-    ];
+    {title: 'JavaScript Complex', monthDuration: 5},
+    {title: 'Java Complex', monthDuration: 6},
+    {title: 'Python Complex', monthDuration: 6},
+    {title: 'QA Complex', monthDuration: 4},
+    {title: 'FullStack', monthDuration: 7},
+    {title: 'Frontend', monthDuration: 4}
+];
 for (const item of coursesAndDurationArray) {
     let term = +prompt('Enter term')
-    if (term.monthDuration > 5){
+    if (term.monthDuration > 5) {
         console.log('Super!')
     }
 }
