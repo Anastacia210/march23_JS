@@ -106,7 +106,7 @@ if (x !== 0) {
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
 // (в першу, другу, третю или четверту частину години).
 let time = +prompt('Enter minute from 0 to 59');
-if (time <= 15) {
+if (time > 0 && time <= 15) {
     console.log('first quarter');
 } else if (time > 15 && time <= 30) {
     console.log('second quarter');
@@ -121,7 +121,7 @@ if (time <= 15) {
 // - У змінній day дано якесь число від 1 до 31.
 // Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
 let day = +prompt('Enter day from 1 to 31');
-if (day <= 10) {
+if (day > 0 && day <= 10) {
     console.log('first decade');
 } else if (day > 10 && day <= 21) {
     console.log('second decade');
@@ -178,7 +178,7 @@ if (num1 > num2) {
 //         за допомоги  оператора || буде присвоювати змінній х значення "default"
 //         якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 let xx = '';
-if (xx=== ''|| xx === null || xx === undefined || xx === 0){
+if (xx === '' || xx === null || xx === undefined || xx === 0) {
     xx = 'default';
 }
 console.log(xx)
@@ -195,22 +195,22 @@ let coursesAndDurationArray = [
     {title: 'FullStack', monthDuration: 7},
     {title: 'Frontend', monthDuration: 4}
 ];
-if (coursesAndDurationArray[0].monthDuration > 5){
+if (coursesAndDurationArray[0].monthDuration > 5) {
     console.log(coursesAndDurationArray[0].title, 'SUPER')
 }
-if (coursesAndDurationArray[1].monthDuration > 5){
+if (coursesAndDurationArray[1].monthDuration > 5) {
     console.log(coursesAndDurationArray[1].title, 'SUPER')
 }
-if (coursesAndDurationArray[2].monthDuration > 5){
+if (coursesAndDurationArray[2].monthDuration > 5) {
     console.log(coursesAndDurationArray[2].title, 'SUPER')
 }
-if (coursesAndDurationArray[3].monthDuration > 5){
+if (coursesAndDurationArray[3].monthDuration > 5) {
     console.log(coursesAndDurationArray[3].title, 'SUPER')
 }
-if (coursesAndDurationArray[4].monthDuration > 5){
+if (coursesAndDurationArray[4].monthDuration > 5) {
     console.log(coursesAndDurationArray[4].title, 'SUPER')
 }
-if (coursesAndDurationArray[5].monthDuration > 5){
+if (coursesAndDurationArray[5].monthDuration > 5) {
     console.log(coursesAndDurationArray[5].title, 'SUPER')
 }
 
