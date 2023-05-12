@@ -1,0 +1,16 @@
+
+
+.users-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user-block {
+    width: 40%;
+    background-color: aqua;
+
+}
+
+.address-block {
+
+}
