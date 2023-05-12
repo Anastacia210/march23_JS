@@ -112,18 +112,19 @@ function swap(arr, index1, index2) {
     return arr;
 }
 
-console.log(swap([14, 23, 32, 41], 1, 2));
+console.log(swap([14, 23, 32, 41], 1, 3));
 
 // - Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
-function exchange(moneySum, currency, value) {
-    for (let i = 0; i < value.length; i++) {
-        if (value[i].currency === value) {
-            return moneySum;
+function exchange (sumUAH,currencyValues,exchangeCurrency){
+    for (const item of currencyValues){
+        if (item.currency===exchangeCurrency){
+            return sumUAH/item.value;
         }
     }
 }
-exchange(1000, 'USD', 40);
+const result = exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD');
+console.log(result);
 
 
 
