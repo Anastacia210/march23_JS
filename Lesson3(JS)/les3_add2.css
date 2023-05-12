@@ -1,16 +1,23 @@
 
-
 .users-box {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    justify-items: center;
 }
 
 .user-block {
     width: 40%;
     background-color: aqua;
-
+    text-align: center;
+    border-radius: 5%;
+    border: 3px solid blue;
+    margin: 5px;
+    justify-items: center;
 }
 
 .address-block {
+    background-color: bisque;
+}
+h2 {
+    font-size: 30px;
 
 }
