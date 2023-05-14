@@ -1,7 +1,12 @@
 
+body {
+    margin: 0 auto;
+}
 .users-box {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .user-block {
