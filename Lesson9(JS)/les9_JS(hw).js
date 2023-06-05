@@ -219,13 +219,14 @@ let coursesArray = [
 ];
 for (const course of coursesArray) {
     const mainDiv = document.createElement('div');
-    mainDiv.style.border = '3px solid red'
+    mainDiv.style.border = '3px solid yellowgreen'
     mainDiv.style.marginTop = '3px'
     mainDiv.style.width = '400px'
     const title = document.createElement('h1');
     title.innerText = course.title
+    title.style.color = 'darkblue'
     title.style.margin = '2px'
-    title.style.border = '2px solid blue'
+    title.style.border = '2px solid darkviolet'
     const monDur = document.createElement('h2');
     monDur.innerText = course.monthDuration
     monDur.style.margin = '2px'
@@ -233,15 +234,15 @@ for (const course of coursesArray) {
     const hourDur = document.createElement('h3');
     hourDur.innerText = course.hourDuration
     hourDur.style.margin = '2px'
-    hourDur.style.border = '2px solid blue'
+    hourDur.style.border = '2px solid pink'
     const modules = document.createElement('ul');
-    modules.style.border = '2px solid blue'
+    modules.style.border = '2px solid salmon'
     modules.style.margin = '2px'
     for (const item of course.modules) {
         const skills = document.createElement('li');
         skills.innerText = item
         skills.style.margin = '2px'
-        skills.style.border = '2px solid blue'
+        skills.style.border = '2px solid cornflowerblue'
 
         modules.appendChild(skills)
     }
